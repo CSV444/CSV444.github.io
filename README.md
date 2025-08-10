@@ -62,7 +62,7 @@
     .divider{ display:flex; align-items:center; justify-content:center; gap:.75rem; margin:.5rem 0 1.2rem; opacity:.9; }
     .divider .dot{ width:6px; height:6px; border-radius:50%; background:var(--gold); }
 
-    .actions{ display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:.25rem; }
+    .actions{ display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:.25rem; align-items:center; }
     .btn-icon{
       background:none;
       border:none;
@@ -90,7 +90,7 @@
 
       <section class="centerpiece" aria-label="logo principal">
         <div class="logo-wrap" id="logoWrap">
-          <img src="assets/logo-csv.png" alt="Logo CSV Horlogerie" class="logo-img" />
+          <img src="assets/logo-csv-horlogerie.png" alt="Logo CSV Horlogerie" class="logo-img" />
         </div>
       </section>
 
@@ -104,9 +104,9 @@
       </section>
 
       <nav class="actions" aria-label="Réseaux et paiement">
-        <a class="btn-icon" href="https://urldefense.com/v3/__https://www.instagram.com/noahsrl___/profilecard/?igsh=MTc2cW10ZDN4dzNwNQ==__;!!N-YFn6XDn0i53t4!2YG7SzYgOQfDrzvWMpIlSvQ5khAM5hLqLHUF7xGzy2g6r5v5mWNkhVqA2uMxP581oEkMISy4gvUMhpSsOkS2kenJjQWP$" target="_blank" rel="noopener"><img src="assets/instagram-logo.png" alt="Instagram"></a>
+        <a class="btn-icon" href="https://urldefense.com/v3/__https://www.instagram.com/noahsrl___/profilecard/?igsh=MTc2cW10ZDN4dzNwNQ==__;!!N-YFn6XDn0i53t4!2YG7SzYgOQfDrzvWMpIlSvQ5khAM5hLqLHUF7xGzy2g6r5v5mWNkhVqA2uMxP581oEkMISy4gvUMhpSsOkS2kenJjQWP$" target="_blank" rel="noopener"><img src="assets/logo-instagram.png" alt="Instagram"></a>
         <a class="btn-gold" href="https://buy.stripe.com/ton_lien" target="_blank" rel="noopener">Acquérir la formation</a>
-        <a class="btn-icon" href="https://www.tiktok.com/@csvj444" target="_blank" rel="noopener"><img src="assets/tiktok-logo.png" alt="TikTok"></a>
+        <a class="btn-icon" href="https://www.tiktok.com/@csvj444" target="_blank" rel="noopener"><img src="assets/logo-tiktok.png" alt="TikTok"></a>
       </nav>
 
       <p class="legal">Maison indépendante — CSV Horlogerie</p>
