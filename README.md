@@ -63,20 +63,25 @@
     .divider .dot{ width:6px; height:6px; border-radius:50%; background:var(--gold); }
 
     .actions{ display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:.25rem; }
-    .btn{ appearance:none; border:none; cursor:pointer; padding:.9rem 1.2rem; border-radius:999px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; font-size:.86rem; text-decoration:none; color:#1a1a1a; background:linear-gradient(180deg, #f0dca6, var(--gold));
-          box-shadow:0 6px 18px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.35); transition:transform .08s ease, filter .2s ease, background .2s ease; }
-    .btn:hover{ transform:translateY(-1px); background:linear-gradient(180deg, #f5e4b9, var(--gold-deep)); filter:saturate(1.05); }
-    .btn:active{ transform:translateY(0); }
+    .btn-icon{
+      background:none;
+      border:none;
+      cursor:pointer;
+      padding:0.4rem;
+      border-radius:50%;
+      transition:transform 0.1s ease;
+    }
+    .btn-icon img{ width:48px; height:48px; display:block; }
+    .btn-icon:hover{ transform:scale(1.05); }
+
+    .btn-gold{
+      appearance:none; border:none; cursor:pointer; padding:.9rem 1.2rem; border-radius:999px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; font-size:.86rem; text-decoration:none; color:#1a1a1a; background:linear-gradient(180deg, #f0dca6, var(--gold));
+      box-shadow:0 6px 18px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.35); transition:transform .08s ease, filter .2s ease, background .2s ease;
+    }
+    .btn-gold:hover{ transform:translateY(-1px); background:linear-gradient(180deg, #f5e4b9, var(--gold-deep)); filter:saturate(1.05); }
+    .btn-gold:active{ transform:translateY(0); }
 
     .legal{ text-align:center; font-size:.8rem; letter-spacing:.25em; text-transform:uppercase; color:rgba(231,231,231,.7); }
-
-    @media (max-width: 520px){
-      .frame{ padding:3rem 1.25rem; }
-      .title .big{ font-size:1.1rem; }
-      .title .small{ font-size:.85rem; }
-      .logo-img{ width:min(300px, 72%); }
-      .btn{ font-size:.78rem; padding:.8rem 1rem; }
-    }
   </style>
 </head>
 <body>
@@ -99,9 +104,9 @@
       </section>
 
       <nav class="actions" aria-label="Réseaux et paiement">
-        <a class="btn" href="https://urldefense.com/v3/__https://www.instagram.com/noahsrl___/profilecard/?igsh=MTc2cW10ZDN4dzNwNQ==__;!!N-YFn6XDn0i53t4!2YG7SzYgOQfDrzvWMpIlSvQ5khAM5hLqLHUF7xGzy2g6r5v5mWNkhVqA2uMxP581oEkMISy4gvUMhpSsOkS2kenJjQWP$" target="_blank" rel="noopener" aria-label="Ouvrir Instagram">Instagram</a>
-        <a class="btn" href="https://www.tiktok.com/@csvj444" target="_blank" rel="noopener" aria-label="Ouvrir TikTok">TikTok</a>
-        <a class="btn" href="https://buy.stripe.com/ton_lien" target="_blank" rel="noopener" aria-label="Ouvrir Stripe">Stripe</a>
+        <a class="btn-icon" href="https://urldefense.com/v3/__https://www.instagram.com/noahsrl___/profilecard/?igsh=MTc2cW10ZDN4dzNwNQ==__;!!N-YFn6XDn0i53t4!2YG7SzYgOQfDrzvWMpIlSvQ5khAM5hLqLHUF7xGzy2g6r5v5mWNkhVqA2uMxP581oEkMISy4gvUMhpSsOkS2kenJjQWP$" target="_blank" rel="noopener"><img src="assets/instagram-logo.png" alt="Instagram"></a>
+        <a class="btn-gold" href="https://buy.stripe.com/ton_lien" target="_blank" rel="noopener">Acquérir la formation</a>
+        <a class="btn-icon" href="https://www.tiktok.com/@csvj444" target="_blank" rel="noopener"><img src="assets/tiktok-logo.png" alt="TikTok"></a>
       </nav>
 
       <p class="legal">Maison indépendante — CSV Horlogerie</p>
@@ -128,13 +133,5 @@
       }, { passive:true });
     })();
   </script>
-
-  <!-- README pour GitHub Pages -->
-  <!--
-  1) Placer ce fichier comme index.html à la racine.
-  2) Dossier assets/ avec logo-csv.png (PNG transparent 1000x1000 conseillé).
-  3) Liens Instagram et TikTok sont déjà intégrés. Remplacer lien Stripe.
-  4) Activer GitHub Pages : Settings → Pages → Deploy from branch → main / root.
-  -->
 </body>
 </html>
