@@ -60,7 +60,7 @@
         <a href="https://buy.stripe.com/test_portail_de_paiement" class="button">Payer avec Stripe</a>
         
         <!-- Lien vers TikTok -->
-        <a href="https://www.tiktok.com/@votre_compte" class="button">TikTok</a>
+        <a href="(https://www.tiktok.com/@csvj444)" class="button">TikTok</a>
         
         <!-- Lien vers Instagram -->
         <a href="https://www.instagram.com/votre_compte" class="button">Instagram</a>
