@@ -104,9 +104,9 @@
       </section>
 
       <nav class="actions" aria-label="Réseaux et paiement">
-        <a class="btn-icon" href="https://urldefense.com/v3/__https://www.instagram.com/noahsrl___/profilecard/?igsh=MTc2cW10ZDN4dzNwNQ==__;!!N-YFn6XDn0i53t4!2YG7SzYgOQfDrzvWMpIlSvQ5khAM5hLqLHUF7xGzy2g6r5v5mWNkhVqA2uMxP581oEkMISy4gvUMhpSsOkS2kenJjQWP$" target="_blank" rel="noopener"><img src="assets/logo-instagram.png" alt="Instagram"></a>
+        <a class="btn-icon" href="https://urldefense.com/v3/__https://www.instagram.com/noahsrl___/profilecard/?igsh=MTc2cW10ZDN4dzNwNQ==__;!!N-YFn6XDn0i53t4!2YG7SzYgOQfDrzvWMpIlSvQ5khAM5hLqLHUF7xGzy2g6r5v5mWNkhVqA2uMxP581oEkMISy4gvUMhpSsOkS2kenJjQWP$" target="_blank" rel="noopener"><img src="icone-logo-vectoriel-instagram-logotype-medias-sociaux_901408-392" alt="Instagram"></a>
         <a class="btn-gold" href="https://buy.stripe.com/ton_lien" target="_blank" rel="noopener">Acquérir la formation</a>
-        <a class="btn-icon" href="https://www.tiktok.com/@csvj444" target="_blank" rel="noopener"><img src="assets/logo-tiktok.png" alt="TikTok"></a>
+        <a class="btn-icon" href="https://www.tiktok.com/@csvj444" target="_blank" rel="noopener"><img src="https://1drv.ms/u/c/cc9202be542c044a/EeNTu5-MhIVNj4EtM_Ub8M0Bc3agPRvIwW7tl1bvdKVabQ?e=05NHWK" alt="TikTok"></a>
       </nav>
 
       <p class="legal">Maison indépendante — CSV Horlogerie</p>
