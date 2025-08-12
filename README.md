@@ -4,6 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CSV Horlogerie — Temps & Tradition</title>
+  <link rel="icon" href="assets/favicon.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -82,15 +85,44 @@
     .btn-gold:active{ transform:translateY(0); }
 
     .legal{ text-align:center; font-size:.8rem; letter-spacing:.25em; text-transform:uppercase; color:rgba(231,231,231,.7); }
+    /* Header bandeau */
+    .site-header{ position:absolute; top:2.2rem; left:2.6rem; right:2.6rem; display:flex; align-items:center; justify-content:space-between; pointer-events:auto; }
+    .brand{ display:flex; align-items:center; gap:.75rem; }
+    .header-logo{ width:44px; height:44px; object-fit:contain; filter: drop-shadow(0 4px 10px rgba(0,0,0,.35)); }
+    .brand-text{ line-height:1.05; }
+    .brand-name{ font-family:"Cormorant Garamond", serif; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); font-size:1.05rem; }
+    .brand-tag{ display:block; font-size:.72rem; color:rgba(231,231,231,.8); letter-spacing:.2em; text-transform:uppercase; }
+    /* Header bandeau */
+    .site-header{ position:absolute; top:2.2rem; left:2.6rem; right:2.6rem; display:flex; align-items:center; justify-content:space-between; pointer-events:auto; }
+    .brand{ display:flex; align-items:center; gap:.75rem; }
+    .header-logo{ width:44px; height:44px; object-fit:contain; filter: drop-shadow(0 4px 10px rgba(0,0,0,.35)); }
+    .brand-text{ line-height:1.05; }
+    .brand-name{ font-family:"Cormorant Garamond", serif; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); font-size:1.05rem; }
+    .brand-tag{ display:block; font-size:.72rem; color:rgba(231,231,231,.8); letter-spacing:.2em; text-transform:uppercase; }
+    .header-actions{ display:flex; align-items:center; gap:.6rem; }
+    .btn-sm{ padding:.6rem 1rem; font-size:.78rem; }
   </style>
 </head>
 <body>
   <main class="frame" role="main" aria-label="CSV Horlogerie — vitrine">
+    <header class="site-header" aria-label="En-tête">
+      <div class="brand">
+        <img src="assets/logo-csv.png" alt="Logo CSV" class="header-logo" />
+        <div class="brand-text">
+          <span class="brand-name">CSV Horlogerie</span>
+          <span class="brand-tag">Temps & Tradition</span>
+        </div>
+      </div>
+    </header>
+      <nav class="header-actions" aria-label="Actions en-tête">
+        <a class="btn-gold btn-sm" href="mailto:contact@tondomaine.fr">Contact</a>
+        <a class="btn-gold btn-sm" href="https://wa.me/XXXXXXXXXXX" target="_blank" rel="noopener" aria-label="Ouvrir WhatsApp">WhatsApp</a>
+      </nav>
     <div class="stack">
 
       <section class="centerpiece" aria-label="logo principal">
         <div class="logo-wrap" id="logoWrap">
-          <img src="assets/logo-csv-horlogerie.png" alt="Logo CSV Horlogerie" class="logo-img" />
+          <img src="assets/logo-csv.png" alt="Logo CSV Horlogerie" class="logo-img" />
         </div>
       </section>
 
@@ -104,9 +136,9 @@
       </section>
 
       <nav class="actions" aria-label="Réseaux et paiement">
-        <a class="btn-icon" href="https://urldefense.com/v3/__https://www.instagram.com/noahsrl___/profilecard/?igsh=MTc2cW10ZDN4dzNwNQ==__;!!N-YFn6XDn0i53t4!2YG7SzYgOQfDrzvWMpIlSvQ5khAM5hLqLHUF7xGzy2g6r5v5mWNkhVqA2uMxP581oEkMISy4gvUMhpSsOkS2kenJjQWP$" target="_blank" rel="noopener"><img src="icone-logo-vectoriel-instagram-logotype-medias-sociaux_901408-392" alt="Instagram"></a>
+        <a class="btn-icon" href="https://urldefense.com/v3/__https://www.instagram.com/noahsrl___/profilecard/?igsh=MTc2cW10ZDN4dzNwNQ==__;!!N-YFn6XDn0i53t4!2YG7SzYgOQfDrzvWMpIlSvQ5khAM5hLqLHUF7xGzy2g6r5v5mWNkhVqA2uMxP581oEkMISy4gvUMhpSsOkS2kenJjQWP$" target="_blank" rel="noopener"><img src="assets/logo-instagram.png" alt="Instagram"></a>
         <a class="btn-gold" href="https://buy.stripe.com/ton_lien" target="_blank" rel="noopener">Acquérir la formation</a>
-        <a class="btn-icon" href="https://www.tiktok.com/@csvj444" target="_blank" rel="noopener"><img src="https://1drv.ms/u/c/cc9202be542c044a/EeNTu5-MhIVNj4EtM_Ub8M0Bc3agPRvIwW7tl1bvdKVabQ?e=05NHWK" alt="TikTok"></a>
+        <a class="btn-icon" href="https://www.tiktok.com/@csvj444" target="_blank" rel="noopener"><img src="assets/logo-tiktok.png" alt="TikTok"></a>
       </nav>
 
       <p class="legal">Maison indépendante — CSV Horlogerie</p>
@@ -116,6 +148,7 @@
 
   <script>
     (function(){
+      // Effet parallax
       const root = document.documentElement;
       const frame = document.querySelector('.frame');
       function update(e){
@@ -131,6 +164,40 @@
         const t = ev.touches[0];
         update({ clientX:t.clientX, clientY:t.clientY });
       }, { passive:true });
+
+      // Rendu robuste des logos : essaie plusieurs noms de fichiers
+      const candidates = {
+        ig: [
+          'assets/logo-instagram.png',
+          'assets/instagram-logo.png',
+          'assets/instagram.png',
+          'assets/ig.png'
+        ],
+        tk: [
+          'assets/logo-tiktok.png',
+          'assets/tiktok-logo.png',
+          'assets/tiktok.png',
+          'assets/tt.png'
+        ],
+        brand: [ 'assets/logo-csv.png' ]
+      };
+
+      function tryLoad(imgEl, list){
+        let i = 0;
+        function next(){
+          if(i >= list.length){ return; }
+          const src = list[i++];
+          const test = new Image();
+          test.onload = () => { imgEl.src = src; };
+          test.onerror = next;
+          test.src = src;
+        }
+        next();
+      }
+
+      tryLoad(document.querySelector('img[alt="Instagram"]'), candidates.ig);
+      tryLoad(document.querySelector('img[alt="TikTok"]'), candidates.tk);
+      tryLoad(document.querySelector('img[alt="Logo CSV Horlogerie"]'), candidates.brand);
     })();
   </script>
 </body>
