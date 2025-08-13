@@ -107,7 +107,7 @@
   <main class="frame" role="main" aria-label="CSV Horlogerie — vitrine">
     <header class="site-header" aria-label="En-tête">
       <div class="brand">
-        <img src="assets/logo-csv.png" alt="Logo CSV" class="header-logo" />
+        <img src="logo-csv.png" alt="Logo CSV" class="header-logo" />
         <div class="brand-text">
           <span class="brand-name">CSV Horlogerie</span>
           <span class="brand-tag">Temps & Tradition</span>
