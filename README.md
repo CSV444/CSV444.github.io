@@ -133,7 +133,7 @@
       </section>
 
       <nav class="actions" aria-label="Réseaux et paiement">
-        <a class="btn-icon" href="https://www.instagram.com/noahsrl" target="_blank" rel="noopener"><img src="icon-512.png" alt="Instagram"></a>
+        <a class="btn-icon" href="https://www.instagram.com/noahsrl___" target="_blank" rel="noopener"><img src="icon-512.png" alt="Instagram"></a>
         <a class="btn-gold" href="https://buy.stripe.com/ton_lien" target="_blank" rel="noopener">Acquérir la formation</a>
         <a class="btn-icon" href="https://www.tiktok.com/@csvj444" target="_blank" rel="noopener"><img src="icon-192.png" alt="TikTok"></a>
       </nav>
