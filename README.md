@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CSV Horlogerie — Temps & Tradition</title>
   <link rel="icon" href="assets/favicon.png" sizes="32x32" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="manifest" href="assets/site.webmanifest" />
